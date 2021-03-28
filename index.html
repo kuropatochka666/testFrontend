@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<section class="wrapper">
+			<div class="wrapper-inner">
+				<form
+					method="POST"
+					action="https://60376bfd5435040017722533.mockapi.io/form"
+				>
+					<h1>Задать вопрос</h1>
+					<input
+						class="form-inputs"
+						type="text"
+						name="name"
+						placeholder="Фамилия Имя Отчество *"
+						pattern="[а-яА-ЯёЁ]+"
+						required
+					/>
+					<input
+						class="form-inputs"
+						type="tel"
+						id="phoneInput"
+						name="phone"
+						placeholder="Телефон *"
+						required
+					/>
+					<input
+						class="form-inputs"
+						type="email"
+						name="email"
+						placeholder="Email"
+					/>
+					<input id="btn" value="ОТПРАВИТЬ ЗАПРОС" type="submit" />
+				</form>
+			</div>
+		</section>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/jquery.maskedinput.min.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
